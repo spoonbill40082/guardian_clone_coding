@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 이하는 오픈그래프 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="The Guardian" />
+  <meta property="og:title" content="The Guardian Webpage" />
+  <meta property="og:description" content="Main Page" />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
+  <meta property="og:url" content="https://www.theguardian.com/international" />
+
+  <!-- 이하는 트위터 카드 -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="The Guardian" />
+  <meta property="twitter:title" content="The Guardian Webpage" />
+  <meta property="twitter:description" content="Main Page" />
+  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+  <meta property="twitter:url" content="https://www.theguardian.com/international" />
+
+  <title>The Guardian</title>
+  <!-- 파비콘 -->
+  <link rel="icon" href="./favicon.png" />
+
+  <!-- css 리셋 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+
+  <!-- 폰트 출처: https://github.com/guardian/fonts?tab=readme-ov-file -->
+  <!-- 폰트 사용법: https://guardian.github.io/csnx/?path=/docs/source-foundations_typography--docs -->
+  <link rel="stylesheet" href="./css/font-faces.css" />
+
+  <!-- 구글폰트에서 끌어온 아이콘 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- 자바스크립트 라이브러리 lodash, gsap를 사용했다. 사용법은 나중에 알아보기 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="./js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 헤더 -->
+  <header>
+
+
+    <!-- 헤더의 서브 메뉴 -->
+    <div class="container__up">
+      <div class="sub-menu">
+        <a href="javascript:void[0]">
+          <div class="items">
+            <div class="material-icons">feed</div>
+            Print subscriptions
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            <div class="material-icons">account_circle</div>
+            Sign in
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            Search jobs
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            <div class="material-icons">search</div>
+            Search
+          </div>
+        </a>
+        <a href="javascript:void[0]">
+          <div class="items">
+            International edition
+            <div class="material-icons">expand_more</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 헤더, support message, logo -->
+    <div class="container__down">
+      <div class="item__left">
+        <div class="item">Support the Guardian</div>
+        <div class="item">Fund independent journalism with $13 per month</div>
+        <div class="item">
+          <a href="javascript:void[0]">Support us
+            <div class="material-icons">arrow_forward</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="item__right">
+        <a href="https://www.theguardian.com/international">
+          <img src="./images/The_Guardian_2018_logo.svg" alt="The Guardian">
+        </a>
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- 뉴스 카테고리 -->
+  <nav>
+    <div class="container">
+      <a href="javascript:void[0]">
+        <div class="items">News</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Opinion</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Sport</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">culture</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Lifestyle</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">More</div>
+        <div class="material-icons">expand_more</div>
+      </a>
+    </div>
+
+  </nav>
+
+  <!-- aside 영역 -->
+  <aside>
+
+    <div class="container">
+      <a href="javascript:void[0]">
+        <div class="items">Fashion</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Food</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Recipes</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Love & sex</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Health & fitness</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Home & garden</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Women</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Men</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Family</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Travel</div>
+      </a>
+      <a href="javascript:void[0]">
+        <div class="items">Money</div>
+      </a>
+    </div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+    <div class="lines"></div>
+  </aside>
+
+
+  <!-- 카테고리별 섹션 -->
+
+  <section id="headline">
+    <div class="category">Headlines</div>
+    <div class="container_articles">
+      <ul>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="photo"></div>
+              <div class="article__title">Papua New Guinea</div>
+              <div class="article__subtitle">Dozens killed in outbreak of tribal violence in highlands</div>
+              <div class="article__detail"> Police say attack between neighbouring tribes led to mass deaths, marking an
+                escalation in fighting in the country’s remote northern region</div>
+              <div class="time">4h ago</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void[0]">
+            <div class="articles">
+              <div class="article__title-mini">Apple</div>
+              <div class="article__subtitle-mini">Company faces possible €500m fine from EU over music streaming access
+              </div>
+              <div class="time">38m ago</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- 메인, News in focus -->
+  <section id="news-in-focus">
+    <div class="category">News in focus</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="Spotlight">
+    <div class="category">Spotlight</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="opinion">
+    <div class="category">Opinion</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="tip-us-off">
+    <div class="category">Tip us off</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="sport">
+    <div class="category">Sport</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="climate-crisis">
+    <div class="category">Climate crisis</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="around-the-world">
+    <div class="category">Around the world</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="culture">
+    <div class="category">Culture</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="lifestyle">
+    <div class="category">Lifestyle</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="the-guardian-documentaries">
+    <div class="category">The Guardian Documentaries</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="take-part">
+    <div class="category">Take part</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="from-our-global-editions">
+    <div class="category">From our global editions</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="you-may-have-missed">
+    <div class="category">You may have missed</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="play-the-guardians-daily-word-game">
+    <div class="category">Play the Guardian's daily word game</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="podcasts">
+    <div class="category">Podcasts</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="videos">
+    <div class="category">Videos</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="in-pictures">
+    <div class="category">In pictures</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="most-viewed">
+    <div class="category">Most viewed</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+  <!--  -->
+  <section id="explore-more-on-these-topics">
+    <div class="category">Explore more on these topics</div>
+    <div class="container_articles">
+      <div class="item__article">article1</div>
+      <div class="item__article">article2</div>
+      <div class="item__article">article3</div>
+      <div class="item__article">article4</div>
+      <div class="item__article">article5</div>
+      <div class="item__article">article6</div>
+    </div>
+  </section>
+
+
+  <!-- 푸터 -->
+
+  <div>상단 메뉴</div>
+  <div>메뉴들</div>
+  <div>저작권</div>
+
+</body>
+
+</html>

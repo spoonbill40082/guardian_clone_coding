@@ -1,0 +1,473 @@
+:root {
+  /* 색상 목록 */
+  --yellow: #FFD213;
+  --darkblue: #041F4A;
+  --blue: #052962;
+  --lightblue: #506991;
+  --red: #C70000;
+  --black: #121212;
+  --gray-card-on: #EDEDED;
+  --gray-text: #707070;
+  --background-gray: #EDEDED;
+
+  /* 글꼴 */
+  --font-headline: 'GH Guardian Headline';
+  --font-egyptian: 'Guardian Egyptian Web';
+  --font-sans: 'GuardianTextSans';
+  --font-title: 'GT Guardian Titlepiece';
+
+  /* 가로 너비 */
+  --main-width: 1300px;
+  --big-article-width: 700px;
+  --middle-article-width: 460px;
+  --small-article-width: 220px;
+  --category-width-width: 140px;
+}
+
+body {
+  color: var(--black);
+  font-family: var(--font-headline);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.category {
+  font-family: var(--font-title);
+  font-size: 24px;
+}
+
+header {
+  background-color: var(--blue);
+  height: 185px;
+  width: 100%;
+  top: 0;
+
+}
+
+header .container__up {
+  background-color: var(--darkblue);
+  height: 35px;
+}
+
+header .container__up .sub-menu {
+  height: 35px;
+  width: var(--main-width);
+  /* width: 100vw; */
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-right: 100px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .container__up .sub-menu a {
+  color: #ffffff;
+  width: fit-content;
+  padding: 0 10px;
+  text-decoration: none;
+  border-left: 1px solid var(--lightblue);
+}
+
+header .container__up .sub-menu a:first-child {
+  border-left: none;
+  color: var(--yellow);
+}
+
+header .container__up .sub-menu a:last-child {
+  border-left: none;
+  padding-right: 0;
+}
+
+
+header .container__up .sub-menu .items .material-icons {
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: text-bottom;
+}
+
+
+header .container__down {
+  width: var(--main-width);
+  height: 150px;
+  background-color: var(--blue);
+  position: relative;
+  margin: auto;
+}
+
+header .container__down .item__left {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  color: var(--black);
+}
+
+header .container__down .item__left .item:nth-child(1) {
+  height: fit-content;
+  padding: 5px 0;
+  font-family: var(--font-title);
+  font-size: 34px;
+  color: var(--yellow);
+}
+
+header .container__down .item__left .item:nth-child(2) {
+  height: fit-content;
+  padding: 5px 0 15px 0;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+header .container__down .item__left .item:nth-child(3) {
+  width: 120px;
+  height: fit-content;
+  padding: 8px 12px;
+  border-radius: 24px;
+  background-color: var(--yellow);
+  text-align: center;
+}
+
+header .container__down .item__left .item:nth-child(3) a {
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--black);
+}
+
+header .container__down .item__left .item:nth-child(3) a .material-icons {
+  font-size: 20px;
+  vertical-align: text-bottom;
+}
+
+header .container__down .item__right {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+}
+
+
+/* 뉴스 내비게이터 */
+
+
+nav {
+  height: 42px;
+  background-color: var(--blue);
+  padding: 9px 20px 0 9px;
+  position: relative;
+}
+
+nav .container {
+  height: 42px;
+  width: var(--main-width);
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  margin: auto;
+  border: 1px solid var(--lightblue);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+nav .container a {
+  height: 42px;
+  width: 100vw;
+  color: #ffffff;
+  border-right: 1px solid var(--lightblue);
+  padding: 9px 20px 0px 9px;
+  box-sizing: border-box;
+  flex-basis: 0;
+  flex-grow: 1;
+  text-decoration: none;
+  font-family: var(--font-title);
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+nav .container a:nth-child(1) {
+  padding-left: 15px;
+}
+
+nav .container a:nth-child(1):hover {
+  border-top: 4px solid #FF5943;
+}
+
+nav .container a:nth-child(2):hover {
+  border-top: 4px solid #FF7F0F;
+}
+
+nav .container a:nth-child(3):hover {
+  border-top: 4px solid #00B2FF;
+}
+
+nav .container a:nth-child(4):hover {
+  border-top: 4px solid #EACCA0;
+}
+
+nav .container a:nth-child(5):hover {
+  border-top: 4px solid #FFABDB;
+}
+
+
+nav .container a:last-child {
+  font-family: var(--font-headline);
+  font-weight: 100;
+  display: flex;
+  transition: 0s;
+  flex-grow: 3.5;
+}
+
+nav .container a:last-child:hover {
+  color: var(--yellow);
+  font-family: var(--font-headline);
+  font-weight: 100;
+  display: flex;
+
+}
+
+nav .container a.items:last-child .material-icons {
+  color: #ffffff;
+  vertical-align: text-bottom;
+}
+
+/* aside 영역 */
+
+
+aside {
+  height: 42px;
+  padding: 0 5px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+aside .container {
+  height: 42px;
+  width: var(--main-width);
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  border-right: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  box-sizing: border-box;
+
+}
+
+aside .container a {
+  text-decoration: none;
+  line-height: 42px;
+  height: 42px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  color: var(--black);
+  font-family: var(--font-sans);
+  font-weight: 200;
+  font-size: 16px;
+}
+
+aside .container a:nth-child(1) {
+  padding-left: 15px;
+}
+
+aside .lines {
+  height: 5px;
+  width: var(--main-width);
+  margin: auto;
+  /* border-top: 1px solid #DCDCDC; */
+  border-bottom: 1px solid #DCDCDC;
+  box-sizing: border-box;
+}
+
+/* section 영역 */
+
+/* display	그리드 컨테이너(Container)를 정의
+grid-template-rows	명시적 행(Track)의 크기를 정의
+grid-template-columns	명시적 열(Track)의 크기를 정의
+grid-template-areas	영역(Area) 이름을 참조해 템플릿 생성
+grid-template	grid-template-xxx의 단축 속성
+row-gap	행과 행 사이의 간격(Line)을 정의
+column-gap	열과 열 사이의 간격(Line)을 정의 */
+
+
+section {
+  /* width: var(--main-width); */
+  width: var(--main-width);
+  border: 1px solid #DCDCDC;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px 15px;
+  margin: auto;
+
+  
+/* media (min-width: 1140px)
+.dcr-1sz9f2 {
+    grid-template-rows: [headline-start show-hide-start content-start] auto [show-hide-end content-toggleable-start] auto [headline-end treats-start] auto [content-end content-toggleable-end treats-end bottom-content-start] auto [bottom-content-end];
+    grid-template-columns: minmax(0, 1fr) [decoration-start title-start] repeat(2, 60px) [title-end content-start] repeat(11, 60px) [hide-start] 60px [decoration-end hide-end content-end] minmax(0, 1fr);
+}
+@media (min-width: 980px)
+.dcr-1sz9f2 {
+    grid-template-columns: minmax(0, 1fr) [decoration-start content-start title-start] repeat(11, 60px) [hide-start] 60px [decoration-end content-end title-end hide-end] minmax(0, 1fr);
+}
+@media (min-width: 740px)
+.dcr-1sz9f2 {
+    grid-template-columns: minmax(0, 1fr) [decoration-start content-start title-start] repeat(11, 40px) [hide-start] 40px [decoration-end content-end title-end hide-end] minmax(0, 1fr);
+}
+@media (min-width: 480px)
+.dcr-1sz9f2 {
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+}
+.dcr-1sz9f2 {
+    display: grid;
+    grid-template-rows: [headline-start show-hide-start] auto [show-hide-end headline-end content-toggleable-start content-start] auto [content-end content-toggleable-end bottom-content-start] auto [bottom-content-end];
+    grid-template-columns: [decoration-start] 0px [content-start title-start] repeat(3, minmax(0, 1fr)) [hide-start] minmax(0, 1fr) [content-end title-end hide-end] 0px [decoration-end];
+    grid-auto-flow: dense;
+    -webkit-column-gap: 10px;
+    column-gap: 10px; */
+
+}
+
+section#headline {
+  display: grid;
+}
+
+
+section#headline .category {
+  /* 옆구리에 들어가는 뉴스 카테고리 */
+  display: flex;
+  font-family: var(--font-title);
+  font-size: 24px;
+
+}
+
+section#headline .container_articles ul li {
+  width: calc(1100px / 2);
+  height: 350px;
+  margin: 0 10px;
+  background-color: var(--background-gray);
+  position: relative;
+}
+
+section#headline .container_articles ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  background-color: var(--background-gray);
+  transition: 0;
+}
+
+section#headline .container_articles ul li a:hover {
+  filter: brightness(0.95)
+}
+
+section#headline .container_articles ul li a .articles {
+  background-color: var(--background-gray);
+  border-top: 1px solid var(--red);
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+
+}
+
+section#headline .container_articles ul li a .articles .photo {
+  width: 300px;
+  height: 200px;
+  background-image: url("https://i.guim.co.uk/img/media/32056a210906d2907575762dc2f80e7608b30d23/0_98_2954_1773/master/2954.jpg?width=700&dpr=2&s=none");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: local;
+  position: absolute;
+  right: 0;
+  top: 1;
+}
+
+section#headline .container_articles ul li a .articles .article__title {
+  width: calc(1100px / 2 / 2);
+  font-family: var(--font-title);
+  font-size: 24px;
+  line-height: 1.3;
+  color: var(--red);
+  padding-left: 5px;
+}
+
+section#headline .container_articles ul li a .articles .article__subtitle {
+  width: calc(1100px / 2 / 2);
+  padding: 0 5px;
+  font-family: var(--font-headline);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+section#headline .container_articles ul li a .articles .article__detail {
+  width: calc(1100px / 2 / 2);
+  padding: 0 5px;
+  font-family: var(--font-headline);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.3;
+  position: absolute;
+  bottom: 25px;
+}
+
+
+section#headline .container_articles ul li a .articles .time {
+  padding: 0 5px;
+  font-family: var(--font-sans);
+  color: var(--gray-text);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.3;
+  position: absolute;
+  bottom: 2px;
+}
+
+section#headline .container_articles ul li a .articles .article__title-mini {
+  width: calc(1100px / 2 / 2);
+  font-family: var(--font-title);
+  font-size: 17px;
+  line-height: 1.3;
+  color: var(--red);
+  padding-left: 5px;
+}
+
+section#headline .container_articles ul li a .articles .article__subtitle-mini {
+  width: calc(1100px / 2 / 2);
+  padding: 0 5px;
+  font-family: var(--font-headline);
+  color: var(--black);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+
+
+
+/*  */
+
+section#news-in-focus {}
+
+section#news-in-focus .category {
+  font-family: var(--font-title);
+  font-size: 24px;
+}
+
+section#Spotlight {}
+
+section#Spotlight .category {
+  font-family: var(--font-title);
+  font-size: 24px;
+}
