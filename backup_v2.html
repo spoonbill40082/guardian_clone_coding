@@ -51,8 +51,8 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script defer src="./js/main.js"></script>
 
 </head>
@@ -103,7 +103,7 @@
     <div class="container__down">
       <div class="item__left">
         <div class="item">Support the Guardian</div>
-        <div class="item">Fund independent journalism with $5 per month</div>
+        <div class="item">Fund independent journalism with $13 per month</div>
         <div class="item">
           <a href="javascript:void[0]">Support us
             <div class="material-icons">arrow_forward</div>
@@ -215,64 +215,50 @@
   <section id="headlines">
     <div class="container">
       <div class="item__category">
-        <div class="category-wrap">
-          <div class="item__category-text">
-            Headlines
-          </div>
-
-          <!-- 헤드라인 섹션의 날씨 정보 -->
-          <div class="item__weather">
-            <div class="weather-location">Doksan-dong, Seoul</div>
-            <div class="weather-now">
-              <div class="material-icons">snowing_heavy</div>
-              <div class="weather-now-text">
-                <div class="now">now</div>
-                <div class="temperture">2°C</div>
-              </div>
-            </div>
-            <div class="weather-time">
-              <div class="weather-time-detail">
-                <div class="detail-time">01:00</div>
-                <div class="detail-temperture">2°C</div>
-                <div class="material-icons">cloud</div>
-              </div>
-              <div class="weather-time-detail">
-                <div class="detail-time">04:00</div>
-                <div class="detail-temperture">1°C</div>
-                <div class="material-icons">airwave</div>
-              </div>
-              <div class="weather-time-detail">
-                <div class="detail-time">07:00</div>
-                <div class="detail-temperture">2°C</div>
-                <div class="material-icons">ac_unit</div>
-              </div>
-              <div class="weather-time-detail">
-                <div class="detail-time">10:00</div>
-                <div class="detail-temperture">3°C</div>
-                <div class="material-icons">sunny</div>
-              </div>
-            </div>
-            <div class="item-forecast">
-              <a href="javascript:void[0]">
-                <div class="forecast-detail">
-                  <div class="forecast">View full forecast</div>
-                  <div class="icon">
-                    <div class="material-icons">open_in_new</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+        <div class="item__category-text">
+          Headlines
         </div>
-        <div class="item__small-btn">
-          <div class="btn-detail">
-            <a href="javscript:void[0]">
-              <div class="small-btn-text">All world news stories</div>
-            </a>
+
+        <!-- 헤드라인 섹션의 날씨 정보 -->
+        <div class="item__weather">
+          <div class="weather-location">Doksan-dong, Seoul</div>
+          <div class="weather-now">
+            <div class="material-icons">snowing_heavy</div>
+            <div class="weather-now-text">
+              <div class="now">now</div>
+              <div class="temperture">2°C</div>
+            </div>
           </div>
-          <div class="btn-detail">
-            <a href="javscript:void[0]">
-              <div class="small-btn-text">Twitter</div>
+          <div class="weather-time">
+            <div class="weather-time-detail">
+              <div class="detail-time">01:00</div>
+              <div class="detail-temperture">2°C</div>
+              <div class="material-icons">cloud</div>
+            </div>
+            <div class="weather-time-detail">
+              <div class="detail-time">04:00</div>
+              <div class="detail-temperture">1°C</div>
+              <div class="material-icons">airwave</div>
+            </div>
+            <div class="weather-time-detail">
+              <div class="detail-time">07:00</div>
+              <div class="detail-temperture">2°C</div>
+              <div class="material-icons">ac_unit</div>
+            </div>
+            <div class="weather-time-detail">
+              <div class="detail-time">10:00</div>
+              <div class="detail-temperture">3°C</div>
+              <div class="material-icons">sunny</div>
+            </div>
+          </div>
+          <div class="item-forecast">
+            <a href="javascript:void[0]">
+              <div class="forecast-detail">
+                <div class="forecast">View full forecast</div>
+                <div class="icon">
+                  <div class="material-icons">open_in_new</div>
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -604,7 +590,6 @@
         </a>
       </div>
 
-
       <!-- 기사 4 -->
       <div class="item__articles">
         <a href="javascript:void[0]">
@@ -685,19 +670,6 @@
     </div>
     </div>
   </section>
-
-
-  <div class="advertisement">
-    <div class="ad-box">
-      <div class="add-detail">
-        <div class="add-text">advertisemetnt</div>
-        <div class="add-text">advertisemetnt</div>
-        <div class="add-text">advertisemetnt</div>
-        <div class="add-text">advertisemetnt</div>
-      </div>
-    </div>
-  </div>
-
   <!-- Spotlight -->
 
   <section id="spotlight">
@@ -1268,36 +1240,22 @@
     <div class="container">
       <div class="item__category">Podcasts</div>
 
-      <!-- 전체 상자 -->
-
-      <div class="swiper">
-
-        <!-- 스와이퍼 앞뒤 버튼 -->
-        <div class="swiper-button-prev">
-          <div class="btn__container">
-            <div class="btn__container-arrow">
-              <div class="material-icons">chevron_left</div>
-            </div>
+      <!-- 뒤로 버튼 -->
+      <div class="item__articles">
+        <div class="btn__container">
+          <div class="btn__container-arrow">
+            <div class="material-icons">chevron_left</div>
           </div>
         </div>
-
-        <div class="swiper-button-next">
-          <div class="btn__container">
-            <div class="btn__container-arrow">
-              <div class="material-icons">chevron_right</div>
-            </div>
-          </div>
-        </div>
-
 
         <!-- 팟캐스트 컨테이너 -->
 
-        <!-- <div class="swiper-wrapper"> -->
+        <div class="article-container">
 
 
-        <!-- 컨테이너 1 -->
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <!-- 컨테이너 1 -->
+
+          <div class="podcast__box">
             <a href="javascript:void[0]">
               <div class="box__detail">
                 <div class="imagebox">
@@ -1310,8 +1268,7 @@
                     Weekend
                   </div>
                   <div class="box-subtitle">
-                    Weekend podcast: the Libertines’ tortured reunion, Marina Hyde on celebrity-dictator bromances,
-                    and
+                    Weekend podcast: the Libertines’ tortured reunion, Marina Hyde on celebrity-dictator bromances, and
                     the
                     simple trick to enjoying life more
                   </div>
@@ -1326,7 +1283,7 @@
 
           <!-- 컨테이너 2 -->
 
-          <div class="swiper-slide">
+          <div class="podcast__box">
             <a href="javascript:void[0]">
               <div class="box__detail">
                 <div class="imagebox">
@@ -1352,7 +1309,7 @@
 
           <!-- 컨테이너 3 -->
 
-          <div class="swiper-slide">
+          <div class="podcast__box">
             <a href="javascript:void[0]">
               <div class="box__detail">
                 <div class="imagebox">
@@ -1378,7 +1335,7 @@
 
           <!-- 컨테이너 4 -->
 
-          <div class="swiper-slide">
+          <div class="podcast__box">
             <a href="javascript:void[0]">
               <div class="box__detail">
                 <div class="imagebox">
@@ -1404,7 +1361,7 @@
 
           <!-- 컨테이너 5 -->
 
-          <div class="swiper-slide">
+          <div class="podcast__box">
             <a href="javascript:void[0]">
               <div class="box__detail">
                 <div class="imagebox">
@@ -1430,7 +1387,7 @@
 
           <!-- 컨테이너 6 -->
 
-          <div class="swiper-slide">
+          <div class="podcast__box">
             <a href="javascript:void[0]">
               <div class="box__detail">
                 <div class="imagebox">
@@ -1456,7 +1413,7 @@
 
           <!-- 컨테이너 7 -->
 
-          <div class="swiper-slide">
+          <div class="podcast__box">
             <a href="javascript:void[0]">
               <div class="box__detail">
                 <div class="imagebox">
@@ -1479,17 +1436,41 @@
               </div>
             </a>
           </div>
+
+          <!-- 컨테이너 끝 -->
+
         </div>
 
-        <!-- 컨테이너 끝 -->
+
+
+        <!-- 앞으로 버튼 -->
+
+        <div class="btn__container">
+          <div class="btn__container-arrow">
+            <div class="material-icons">chevron_right</div>
+          </div>
+        </div>
+
+
+
+
+
+
+
       </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
     </div>
   </section>
 
 
 
   <!-- Most viewed -->
-
   <section id="most-viewed">
     <div class="container">
       <div class="item__category">Most viewed</div>
@@ -1504,7 +1485,6 @@
                 </div>
               </div>
               <div class="texts">
-                <div class="live">Live</div>
                 <div class="subtitle-small">
                   Navalny’s mother shown body and ‘blackmailed by authorities’ over funeral
                 </div>
@@ -1583,7 +1563,6 @@
                 </div>
               </div>
               <div class="texts">
-                <div class="live">Live</div>
                 <div class="subtitle-small">
                   Claims of Israeli sexual assault of Palestinian women are credible, UN panel says
                 </div>
@@ -1641,7 +1620,6 @@
                 </div>
               </div>
               <div class="texts">
-                <div class="live">Live</div>
                 <div class="subtitle-small">
                   Russia-Ukraine war: Navalny’s mother says if she doesn’t agree to secret funeral, Russia will ‘do
                   something with my son’s body’ – as it happened
